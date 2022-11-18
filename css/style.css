@@ -1,0 +1,436 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* common css end */
+
+/* header section css start */
+header .top_bar{
+    background: #0f2f44;
+    color: #ffff;
+    padding: 9px 0;
+}
+header .top_bar .top_bar_left{
+    width: 50%;
+}
+header .top_bar .top_bar_right{
+    width: 50%;
+    text-align: right;
+}
+header nav .row{
+    align-items: center;
+}
+header nav .logo{
+    width: 15%;
+}
+header nav .menu{
+    width: 85%;
+}
+header nav .menu ul{
+    justify-content: flex-end;
+}
+header nav .menu ul li a{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 22px 20px;
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+}
+header nav .menu ul li ul{
+    position: absolute;
+    display: none;
+}
+header nav .menu ul li ul li a{
+    padding: 10px;
+    top: 50%;
+    left: 0;
+}
+header nav .menu ul li:hover ul{
+    display: block;
+}
+header nav .menu ul li:hover > a{
+    background: #fff9e6;
+    color: #ffc712;
+}
+header nav .menu ul li > i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* header section css end */
+
+/* banner section css start */
+#banner{
+    height: 600px;
+    background: #e0edff url(../img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-position: 545px bottom;
+    background-size: 60%;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+}
+#banner .banner_content{
+    width: 40%;
+}
+#banner .banner_content h1{
+    font-size: 80px;
+    color: #0f2f44;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+#banner .banner_content h1 small{
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+#banner .banner_content h4{
+    font-size: 32px;
+    color: #8484bf;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 13px;
+}
+#banner .banner_content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 24px;
+    padding: 15px 0;
+}
+#banner .banner_content a{
+    display: inline-block;
+    padding: 10px 15px;
+    background: #8383bf;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+/* #banner .banner_content a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 50%;
+    align-items: center;
+    line-height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+} */
+/* banner section css end */
+
+/* about section css start */
+#about{
+    height: 630px;
+    background: #fff url(../img/about_bg.png);
+    background-repeat: no-repeat;
+    background-position: 600px 100px;
+    background-size: 45%;
+    color: #0f2f44;
+}
+#about .row{
+    height: 100%;
+    /* align-items: center; */
+}
+#about .about_content{
+    width: 50%;
+    margin-top: 95px;
+}
+#about .about_content h5{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+}
+#about .about_content h3{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 32px;
+}
+#about .about_content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding:15px 0; 
+}
+#about .about_content .p_tag{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+    line-height: 44px;
+}
+#about .about_content a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    background: #fff;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.5);
+}
+/* #about .about_content:hover a{
+    background: #ffc712;
+} */
+/* about section css end */
+
+/* skill section css start */
+#skill{
+    height: 635px;
+    background: #fff url(../img/skill_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+    background-size: 50%;
+    color: #0f2f44;
+}
+#skill .row{
+    height: 100%;
+    /* align-items: center; */
+}
+#skill .skill_content{
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 95px;
+    text-align: right;
+}
+#skill .skill_content h5{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+}
+#skill .skill_content h3{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 32px;
+}
+#skill .skill_content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding:15px 0; 
+    /* width: 570px; */
+}
+/* #skill .left{
+    width: 50%;
+} */
+/* #skill .skill_info{
+    width: 50%;
+    margin-top: 50px;
+    text-align: right;
+} */
+/* skill section css end */
+
+/* service section css start */
+#service{
+    height: 425px;
+    background: #f5f5f5;
+}
+#service .service_content .service_info{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#service .service_info h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+    line-height: 14px;
+}
+#service .service_info h3{
+    font-size: 32px;
+    font-weight: 400;
+    color: #0f2f44;
+    text-transform: capitalize;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+#service .service_item{
+    width: calc(100% / 3);
+    padding: 15px;
+    position: relative;
+}
+#service .service_item .service_item_icon{
+    width: 25%;
+    background: #e9e9e9;
+    padding: 60px 15px;
+}
+#service .service_item .service_item_info{
+    width: 75%;
+    background: #ededed;
+    padding: 26px 20px;
+}
+#service .service_item .service_item_info h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    line-height: 20px;
+}
+#service .service_item .service_item_info p{
+    font-size: 14px;
+    color: #444444;
+    line-height: 24px;
+}
+#service .service_item .overlay{
+    background: #0f2f44;
+    position: absolute;
+    inset: 15px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: 0.6s;
+}
+#service .service_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#service .service_item .overlay img{
+    display: inline;
+}
+/* service section css end */
+
+/* portfolio section css start */
+#portfolio{
+    height: 830px;
+    background: #fff;
+}
+#portfolio .portfolio_content .portfolio_info{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+}
+#portfolio .portfolio_info h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+    line-height: 14px;
+}
+#portfolio .portfolio_info h3{
+    font-size: 32px;
+    font-weight: 400;
+    color: #0f2f44;
+    text-transform: capitalize;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+#portfolio .portfolio_item{
+    width: calc(100% / 3);
+    padding: 15px;
+    position: relative;
+}
+#portfolio .portfolio_item img{
+    width: 100%;
+}
+#portfolio .portfolio_item:hover img{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#portfolio .portfolio_item .overlay{
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#portfolio .portfolio_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+/* portfolio section css end */
+
+/* testimonial section css start */
+#testimonial{
+    height: 425px;
+    background: #f5f5f5;
+}
+#testimonial .testimonial_content .testimonial_info{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#testimonial .testimonial_info h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: #0f2f44;
+    line-height: 14px;
+}
+#testimonial .testimonial_info h3{
+    font-size: 32px;
+    font-weight: 400;
+    color: #0f2f44;
+    text-transform: capitalize;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+#testimonial .testimonial_item{
+    width:50%
+}
+#testimonial .testimonial_item img{
+    width: 100%;
+}
+#testimonial .testimonial_item .testimonial_item_img{
+    width: 25%;
+    padding: 60px 15px;
+}
+#testimonial .testimonial_item .testimonial_item_info{
+    width: 75%;
+    background: #e9e9e9;
+    padding: 26px 20px;
+}
+#testimonial .testimonial_item .testimonial_item_info p{
+    font-size: 14px;
+    color: #0f2f44;
+    line-height: 24px;
+}
+#testimonial .testimonial_item .testimonial_item_info h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    line-height: 24px;
+}
+#testimonial .testimonial_item .testimonial_item_info .pi{
+    font-size: 16px;
+}
+/* testimonial section css end */
+
+/* blog section css start */
+/* blog section css end */
